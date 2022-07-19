@@ -1,0 +1,3 @@
+"C:\Users\sofya\Desktop\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\lab4c__.dir/objects.a
+C:\PROGRA~1\MINGW-~1\mingw64\bin\ar.exe cr CMakeFiles\lab4c__.dir/objects.a @CMakeFiles\lab4c__.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\lab4c__.dir/objects.a -Wl,--no-whole-archive  -o lab4c__.exe -Wl,--out-implib,liblab4c__.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\lab4c__.dir\linklibs.rsp

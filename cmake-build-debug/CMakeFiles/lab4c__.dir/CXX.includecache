@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/sofya/CLionProjects/lab4c++/CSVParser.h
+sstream
+-
+fstream
+-
+Tuple.h
+C:/Users/sofya/CLionProjects/lab4c++/Tuple.h
+
+C:/Users/sofya/CLionProjects/lab4c++/Tuple.h
+iostream
+-
+tuple
+-
+string
+-
+
+C:/Users/sofya/CLionProjects/lab4c++/main.cpp
+CSVParser.h
+C:/Users/sofya/CLionProjects/lab4c++/CSVParser.h
+

@@ -1,0 +1,4 @@
+"C:\Users\sofya\Desktop\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\sofya\CLionProjects\lab4c++
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/sofya/CLionProjects/lab4c++/cmake-build-debug
