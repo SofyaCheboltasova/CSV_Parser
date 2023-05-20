@@ -1,1 +1,39 @@
-# [Task](https://docs.google.com/document/d/1FXmDYtpTG6WsjFtm9lysJbni3InftOnkLLeVQ8VwDVY/edit#heading=h.bsd8m5o6o6jr)
+# Task
+
+<h2>Упрощенный парсер CSV</h2>
+
+<h3>Subtask #1 - print tuple</h3> 
+
+Используя рекурсивные шаблоны реализовать оператор для печати `std:tuple`:    
+
+`auto operator<<(std::basic_ostream<Ch, Tr>& os, std::tuple<Args...> const& t)`  
+
+<h3>Subtask #2 - simple CSV parser</h3>  
+
+**CSV format**  
+Табличные данные могут быть представлены как текстовый файл с разделителем ‘\n’ между строками и символом ‘,’ для разделения ячеек внутри строки. Считаем что данные символы не встречаются внутри данных.  
+  
+**CSVParser**
+
+Написать класс делающий возможным следующую потоковую работу с CSV:
+
+```cpp
+int main()  
+{
+   ifstream file("test.csv");
+   CSVParser<int, string> parser(file, 0 /*skip first lines count*/);
+   for (tuple<int, string> rs : parser) {
+       cout<<rs<<endl;
+   }
+}
+```
+
+
+Потоковая обработка подразумевает lazy (ленивое) чтение строк. Таким образом необходимо реализовать http://en.cppreference.com/w/cpp/concept/InputIterator для чтения данных в CSV файле.
+
+<h3>Subtask #2 - improved CSV parser</h3>
+
+Добавить следующие возможности:
+- Поддержка экранирования данных
+- **Конфигурация парсера:** что считать разделителем между строками и колонками и что за символ использовать для экранирования (по умолчанию двойные кавычки)
+- **Обработка ошибок:** выкидывать исключение с информаций о месте в файле (строка, колонка) где произошла ошибка разбора данных
